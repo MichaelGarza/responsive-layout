@@ -133,7 +133,6 @@ header img {
 .contact p {
    padding-top: 2em;
    padding-bottom: 1em;
-   color:
 }
 
 .contact li {
@@ -271,7 +270,7 @@ header img {
 @media (min-width: 1024px) {
 
    body {
-      max-width: 1050;
+      max-width: 1050px;
    }
    
    .main-head,
