@@ -24,6 +24,7 @@ h5,
 p,
 ul {
    margin: 0 auto;
+
 }
 
 ul {
@@ -59,6 +60,11 @@ img {
    background: #d1ddd3;
 }
 
+.nav {
+   padding-bottom: 30px;
+   max-width: 220px;
+}
+
 .portfolios {
    background: #fff;
    padding-left: 1em;
@@ -68,7 +74,7 @@ img {
 }
 
 .portfolio {
-   padding-bottom: 30px
+   padding-bottom: 30px;
 }
 
 
@@ -82,11 +88,6 @@ img {
    font-size: 1.8em
 }
 
-.nav {
-   padding-bottom: 30px;
-   max-width: 220px;
-}
-
 .nav li{
    margin: 5px;
    padding: 9px;
@@ -95,15 +96,17 @@ img {
 }
 
 header img {
-   width: 50%;
-   border: 10px solid #fff;
-   
+   width: 60%;
+   max-width: 280px;
+   border: 10px solid #fff; 
 }
 
 .description p {
    padding-top: 20px;
    padding-bottom: 40px;
-   font-size: 1.1em
+   font-size: 1.1em;
+   width: 100%;
+   max-width: 400px;
 }
 
 .title {
@@ -111,14 +114,22 @@ header img {
    padding-bottom: 3em;
 }
 
+.portfolio img {
+   width: 100%;
+   max-width: 300px;
+}
+
 .portfolio h2 {
    padding-top: 20px;
    padding-bottom: 10px;
-   
+   width: 100%;
+   max-width: 300px;
 }
 
 .portfolio p {
-   width: 90%   
+   width: 90%;
+   width: 100%;
+   max-width: 300px;
 }
 
 .contact li, a {
@@ -150,8 +161,7 @@ header img {
 
 .bottom-nav h5,
 .bottom-nav ul {
-   float: right;
-   
+   float: right;  
 }
 
 .bottom-nav li {
@@ -193,7 +203,6 @@ header img {
    
    .main-head {
       padding-top: 30px;
-      padding-bottom: 50px;
    }
    
    .nav {
@@ -220,6 +229,7 @@ header img {
    
    .description p {
       width: 60%;
+      max-width: 100%;
       text-align: left;
       float: left;
       font-size: 1.3em;
@@ -238,12 +248,11 @@ header img {
       float: left;
       padding-left: 5px;
       padding-right: 5px;
-      padding-bottom: 50px
-      
+      padding-bottom: 50px 
    }
    
    .portfolio p {
-     width: 80%; 
+      width: 80%; 
    }
    
    .contact {
@@ -269,14 +278,15 @@ header img {
 
 @media (min-width: 1024px) {
 
-   body {
-      max-width: 1050px;
-   }
    
    .main-head,
    .main-foot{
       padding-left: 3.75em;
       padding-right: 3.75em;
+   }
+   
+   .main-head {
+      padding-bottom: 40px;
    }
    
    .main-head h1 {
@@ -294,11 +304,13 @@ header img {
    
    .main-head p {
       margin-top: 30px;
-      
+      width: 70%;
    }
    
    header img {
       border-width: 20px;
+      width: 30%;
+      max-width: 400px;
    }
 
    .portfolios {
