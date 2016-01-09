@@ -10,21 +10,7 @@ body {
    font-family: 'Ek Mukta', sans-serif;
    line-height: 1.4;
    color: #494949;
-}
-
-h2 {
-   font-size: 1.3em
-}
-
-a,
-h1,
-h2,
-h4,
-h5,
-p,
-ul {
-   margin: 0 auto;
-
+   text-align: center;
 }
 
 ul {
@@ -34,11 +20,12 @@ ul {
 
 a {
    text-decoration: none;
+   color: #494949;
 }
 
 img {
-   max-width:100%;
-   border-radius: 5px
+   max-width: 100%;
+   border-radius: .5em;
 }
 
 
@@ -46,35 +33,35 @@ img {
   Layout Containers
 ==================================== */
 
+body {
+   background: #d1ddd3;  
+}
 
-.main-head,
-.main-foot {
+.main-header,
+.main-footer {
    background: #d1ddd3;
    padding-left: 1em;
    padding-right: 1em;
-   width: 100%;
-   text-align: center;
+}
+
+.main-header {
+   padding-bottom: 40px; 
 }
 
 .container {
    background: #d1ddd3;
 }
 
-.nav {
-   padding-bottom: 30px;
-   max-width: 220px;
-}
-
-.portfolios {
+.projects {
    background: #fff;
    padding-left: 1em;
    padding-right: 1em;
-   text-align: center;
+   padding-top: 30px;
    padding-bottom: 30px;
 }
 
-.portfolio {
-   padding-bottom: 30px;
+.main-footer {
+   padding-top: 40px;
 }
 
 
@@ -83,255 +70,251 @@ img {
 ==================================== */
 
 
-.main-head h1 {
-   padding: 15px;
-   font-size: 1.8em
+.main-header h1 {
+   margin: 0 auto;
+   font-size: 1.8em;
+   padding-top: 15px;
+   padding-bottom: 10px;
 }
 
-.nav li{
+.main-nav {
+   max-width: 300px;
+   margin: 0 auto;
+   padding-bottom: 35px;
+}
+
+.main-nav li {
    margin: 5px;
    padding: 9px;
-   background:  #fff;
-   border-radius: 5px;
+   background: #fff;
+   border-radius: .5em;
 }
 
-header img {
-   width: 60%;
-   max-width: 280px;
-   border: 10px solid #fff; 
+.description img {
+   width: 200px;
 }
 
 .description p {
-   padding-top: 20px;
-   padding-bottom: 40px;
    font-size: 1.1em;
-   width: 100%;
-   max-width: 400px;
+   margin: 0 auto;
+   max-width: 430px;
+   padding-top: 15px;
 }
 
-.title {
-   padding-top: 3em;
-   padding-bottom: 3em;
+.projects h4 {
+   padding-bottom: 20px;
 }
 
-.portfolio img {
-   width: 100%;
+.proj {
+   padding-bottom: 30px;
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.proj h2 {
    max-width: 300px;
-}
-
-.portfolio h2 {
+   margin: 0 auto;
+   font-weight: 500;
+   font-size: 1.2em;
    padding-top: 20px;
    padding-bottom: 10px;
-   width: 100%;
-   max-width: 300px;
 }
 
-.portfolio p {
-   width: 90%;
-   width: 100%;
+.proj p {
    max-width: 300px;
-}
-
-.contact li, a {
-   color: #7a7a7a;
+   margin: 0 auto;
 }
 
 .contact {
-   padding-top: 4em;
-   padding-bottom: 3em;
+   max-width: 500px;
+   margin: 0 auto;
 }
 
-.contact p {
-   padding-top: 2em;
-   padding-bottom: 1em;
+.contact p, ul {
+   font-size: 1.09em;
+   margin: 0 auto;
+   padding-top: 5px;
+}
+
+.contact ul {
+   padding-top: 30px;
+   padding-bottom: 50px;
 }
 
 .contact li {
-   padding: 10px;
+   padding: 5px;
 }
 
 .bottom-nav {
-   padding-top: 15px;
-   padding-bottom: 45px;
-}
-
-.bottom-nav  p{
-   float: left;
-}
-
-.bottom-nav h5,
-.bottom-nav ul {
-   float: right;  
-}
-
-.bottom-nav li {
+   width: 100%;
    display: inline-block;
-   font-size: .9em;
-   padding-left: 20px
+   padding-top: 15px;
+   padding-bottom: 15px;
 }
 
+.bottom-nav h4{
+   float: left;
+   margin: 0 auto;
+}
+
+.to-top {
+   float: right;
+}
 
 
 /* ================================= 
   Media Queries
 ==================================== */
 
+
 @media (max-width: 767px) {                  
    
-   .bottom-nav ul {
+   .bottom-nav li{
       display: none;
    }
    
-}
-
-@media (min-width: 768px) {                  
-   
-   .bottom-nav h5 {
-      display: none;
-   }
-   
-}
-
+}                
+      
 
 @media (min-width: 768px) {
- 
-   .main-head,
-   .main-foot {
-      padding-left: 1.75em;
-      padding-right: 1.75em;
+   
+   .main-header,
+   .projects,
+   .main-footer{
+      padding-left: 2em;
+      padding-right: 2em;
    }
    
-   .main-head {
+   .main-header {
       padding-top: 30px;
+      padding-bottom: 40px;
    }
    
-   .nav {
-      max-width: 100%;
-   }
-   
-   .nav li{
+   .main-nav li {
+      display: inline-block;
       background: none;
-      padding-left: 15px;
-      padding-right: 15px;
-      font-size: 1em;
-      display: inline-block
-   }
+    }
    
    .description {
       display: inline-block;
-      padding-top: 20px
-   }
-   
-   header img {
-      width: 40%;
-      border-width: 15px;
+      padding-top: 10px;
    }
    
    .description p {
-      width: 60%;
-      max-width: 100%;
-      text-align: left;
+      width: 55%;
       float: left;
-      font-size: 1.3em;
-      padding-top: 0;
-      padding-right: 20px
+      text-align: left;
+      padding-top: 10px;
+      font-size: 1.2em;
    }
    
-   .portfolios {
-      padding-left: 1.75em;
-      padding-right: 1.75em;
+   .description a {
+      width: 45%;
+      float: right;
+      padding-left: 15px;
+      padding-right: 5px;   
+   }
+   
+   .description img {
+      width: 100%;
+   }
+   
+   .projects {
       display: inline-block;
+      padding-bottom: 0;
+
    }
    
-   .portfolio {
+   .proj {
       width: 50%;
       float: left;
       padding-left: 5px;
       padding-right: 5px;
-      padding-bottom: 50px 
-   }
-   
-   .portfolio p {
-      width: 80%; 
-   }
-   
-   .contact {
-      display: inline-block;
-      width: 75%
-   }
-   
-   .contact p, 
-   .contact li {
-      font-size: 1.35em;
-   }
-   
-   .contact p {
-      padding-bottom: 30px
-   }
-   
-   .bottom-nav {
-      padding-bottom: 100px
-   }
-   
-}
-
-
-@media (min-width: 1024px) {
-
-   
-   .main-head,
-   .main-foot{
-      padding-left: 3.75em;
-      padding-right: 3.75em;
-   }
-   
-   .main-head {
-      padding-bottom: 40px;
-   }
-   
-   .main-head h1 {
-      float: left;
-      padding-left: 0;
-   }
-   
-   .main-head ul {
-      float: right;
-   }
-   
-   .main-head li {
-      padding: 10px 0 10px 25px;
-   }
-   
-   .main-head p {
-      margin-top: 30px;
-      width: 70%;
-   }
-   
-   header img {
-      border-width: 20px;
-      width: 30%;
-      max-width: 400px;
-   }
-
-   .portfolios {
-      margin-left: 30px;
-      margin-right: 30px;
-   }
-
-   .portfolio {
-   width: 33%;
-   }
-   
-   .portfolio p {
-     width: 95%; 
-   }
-   
-   .bottom-nav {
       padding-bottom: 50px;
    }
    
-   .contact {
-      width: 60%
+   .main-footer {
+      padding-bottom: 50px;
+   }
+   
+   .contact p {
+      font-size: 1.25em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+   
+   .contact ul {
+      font-size: 1.25em;
+      padding-bottom: 60px;
+   }
+    
+   .to-top {
+      display: none;
+   }
+   
+   .bottom-nav h4 {
+      padding-top: 5px;
+   }
+   
+   .bottom-nav ul {
+      float: right;
+      font-size: .9em;
    }
 
+   .bottom-nav li {
+      display: inline-block;
+      padding-left: 25px;
+   }
+   
 }
+ 
+
+@media (min-width: 1024px) {
+   
+   body {
+      max-width: 1280px;
+      margin: 0 auto;
+   }
+   
+   
+   .main-header h1 {
+      width: 40%;
+      float: left;
+      text-align: left;
+      padding-left: 1em;
+   }
+   
+   .main-nav {
+      width: 80%;
+      float: right;
+      max-width: 60%;
+      text-align: right;
+      padding-right: 1.3em;
+   }
+      
+   .description {
+      width: 100%;
+      padding-left: 2em;
+      padding-right: 2em;
+   }
+   
+   .container {
+      padding-left: 2em;
+      padding-right: 2em;
+   }
+   
+   .proj {
+      width: 33%;
+      float: left;
+   }
+   
+   .main-footer {
+      padding-left: 4em;
+      padding-right: 4em;
+      padding-bottom: 0px;
+   }
+      
+}
+
+   
+ 
