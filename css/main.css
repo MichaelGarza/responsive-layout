@@ -1,4 +1,4 @@
-/* ================================= 
+/*/* ================================= 
   Base Element Styles
 ==================================== */
 
@@ -172,7 +172,7 @@ body {
 ==================================== */
 
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
    
    .main-header,
    .projects,
@@ -264,7 +264,7 @@ body {
 }
  
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
    
    body {
       max-width: 1280px;
@@ -312,4 +312,4 @@ body {
 }
 
    
- 
+ */
