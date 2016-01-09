@@ -157,8 +157,13 @@ body {
    margin: 0 auto;
 }
 
+.bottom-nav li{
+   display: none;
+}
+
 .to-top {
    float: right;
+   display: block;
 }
 
 
@@ -166,15 +171,6 @@ body {
   Media Queries
 ==================================== */
 
-
-@media (max-width: 767px) {                  
-   
-   .bottom-nav li{
-      display: none;
-   }
-   
-}                
-      
 
 @media (min-width: 768px) {
    
@@ -222,7 +218,6 @@ body {
    .projects {
       display: inline-block;
       padding-bottom: 0;
-
    }
    
    .proj {
@@ -247,10 +242,6 @@ body {
       font-size: 1.25em;
       padding-bottom: 60px;
    }
-    
-   .to-top {
-      display: none;
-   }
    
    .bottom-nav h4 {
       padding-top: 5px;
@@ -264,6 +255,10 @@ body {
    .bottom-nav li {
       display: inline-block;
       padding-left: 25px;
+   }
+   
+   .to-top {
+      display: none;
    }
    
 }
