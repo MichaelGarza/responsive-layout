@@ -54,10 +54,7 @@ body {
 
 .projects {
    background: #fff;
-   padding-left: 1em;
-   padding-right: 1em;
-   padding-top: 30px;
-   padding-bottom: 30px;
+   padding: 2em 1em;
 }
 
 .main-footer {
@@ -306,10 +303,8 @@ body {
    .main-footer {
       padding-left: 4em;
       padding-right: 4em;
-      padding-bottom: 0px;
+      padding-bottom: 0;
    }
       
 }
 
-   
- */
